@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Pixelate an Image</h1>
+    <p>
+      Upload an image or pixelate the following demo image
+    </p>
+    <input id="upload" type="file" accept="image/*" />
+    <div>
+      <img
+        style="margin-top: 5px;"
+        id="pixelatedImage"
+        src="./demo.jpg"
+      />
+    </div>
+    <div style="margin-top: 5px;">
+      <span>Pixelation: </span>
+      <input
+        type="range"
+        min="0"
+        max="10"
+        value="0"
+        step="1"
+        class="pixelation"
+        id="pixelationRange"
+      />
+    </div>
+    <script src="./src/index.js"></script>
+  </body>
+</html>
